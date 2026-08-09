@@ -1,7 +1,10 @@
+import java.util.Scanner;
 public class PrimeNumber {
 public static void main(String[] args) {
     // System.out.println("Enter")
-    boolean NumIsPrime = isPrime(23);
+    Scanner input = new Scanner(System.in);
+    boolean NumIsPrime = 
+    isPrime(23);
  System.out.println("The number is prime: " + NumIsPrime);
 }
 static boolean isPrime (int prime){
