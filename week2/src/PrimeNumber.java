@@ -3,9 +3,11 @@ public class PrimeNumber {
 public static void main(String[] args) {
     // System.out.println("Enter")
     Scanner input = new Scanner(System.in);
-    boolean NumIsPrime = 
-    isPrime(23);
+    System.out.println("Enter the number:");
+    int num = input.nextInt();
+    boolean NumIsPrime = isPrime(num);
  System.out.println("The number is prime: " + NumIsPrime);
+ input.close();
 }
 static boolean isPrime (int prime){
 if(prime<2)
