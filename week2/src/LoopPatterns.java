@@ -38,7 +38,7 @@ public class LoopPatterns {
             for(int j = i ; j > 0 ; j++){
                 System.out.print("* ");
             }
-            
+            System.out.println();
         }
     }
     static void PatternforNumTriangular(){
