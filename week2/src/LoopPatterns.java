@@ -9,6 +9,13 @@ public class LoopPatterns {
 
          System.out.println("Pattern C : " );
          TriangularPatternUp();
+
+          System.out.println("Pattern D : " );
+          PatternforNumTriangular();
+
+          System.out.println("Pattern E : " );
+          PatternforNum();
+
     }
     static void RectangularPattern(){
         for(int i = 0 ; i < 4 ; i++){
