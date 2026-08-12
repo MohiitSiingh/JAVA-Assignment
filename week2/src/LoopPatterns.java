@@ -34,7 +34,7 @@ public class LoopPatterns {
         }
     }
        static void TriangularPatternUp(){
-        for (int i = 4 ; i > 0 ; i++){
+        for (int i = 4 ; i > 0 ; i--){
             for(int j = i ; j > 0 ; j++){
                 System.out.print("* ");
             }
