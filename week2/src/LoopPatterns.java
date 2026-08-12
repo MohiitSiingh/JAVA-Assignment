@@ -2,6 +2,8 @@ public class LoopPatterns {
     public static void main(String[] args) {
         System.out.println("Printing different pattern of number and * ");
         System.out.println("Pattern A : " );
+        int size = 4;
+       
         RectangularPattern(4);
 
         System.out.println("Pattern B : " );
