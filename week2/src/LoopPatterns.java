@@ -20,14 +20,15 @@ public class LoopPatterns {
     static void RectangularPattern(){
         for(int i = 0 ; i < 4 ; i++){
             for(int j = 0 ; j < 4 ; j++){
-                System.out.println("* ");
+                System.out.print("* ");
             }
+            System.out.println();
         }
     }
     static void TriangularPattern(){
         for (int i = 0 ; i < 4 ; i++){
             for(int j = 0 ; j <= i ; j++){
-                System.out.println("* ");
+                System.out.print("* ");
             }
         }
     }
