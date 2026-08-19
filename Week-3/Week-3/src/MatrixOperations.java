@@ -1,24 +1,32 @@
 import java.util.Scanner;
 
-public class MatrixOperations {
-    public void MatrixOperations_main(Scanner input) {
+public class MatrixOperations 
+{
+    public void MatrixOperations_main(Scanner input) 
+    {
         // Scanner input = new Scanner(System.in);
         int[][] arr = new int[3][3];
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[0].length; j++) {
+        for (int i = 0; i < arr.length; i++) 
+        {
+            for (int j = 0; j < arr[0].length; j++) 
+            {
                 System.out.print("enter values for array row or column sum at " + i + " " + j + ": ");
                 arr[i][j] = input.nextInt();
 
             }
         }
+
         int[][] arr1 = new int[3][3];
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[0].length; j++) {
-  System.out.print("enter values for array 1 sum at " + i + " " + j + ": ");
+        for (int i = 0; i < arr.length; i++) 
+        {
+            for (int j = 0; j < arr[0].length; j++) 
+            {
+                System.out.print("enter values for array 1 sum at " + i + " " + j + ": ");
                 arr1[i][j] = input.nextInt();
 
             }
         }
+        
         int[][] arr2 = new int[3][3];
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[0].length; j++) {
