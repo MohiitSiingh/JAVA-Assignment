@@ -70,6 +70,15 @@ public class MatrixOperations
                 for(int j = 0 ; j < matrix[0].length ; j ++)
                 {
                     temp[i][j]= matrix[i][j];
+                    // matrix[j][i] = temp[i][j];
+
+                }
+            }
+            for (int i = 0 ; i < matrix.length ; i++)
+            {
+                for(int j = 0 ; j < matrix[0].length ; j ++)
+                {
+                    // temp[i][j]= matrix[i][j];
                     matrix[j][i] = temp[i][j];
 
                 }

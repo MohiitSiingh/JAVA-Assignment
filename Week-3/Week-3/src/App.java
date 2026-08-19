@@ -63,7 +63,7 @@ public class App {
         {
             for(int j = 0 ; j < 3 ; j++)
             {
-                System.out.print(" " + transpose[i][j]);
+                System.out.print( transpose[i][j] + " " );
             }
             System.out.println();
         }
