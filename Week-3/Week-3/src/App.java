@@ -56,6 +56,9 @@ public class App {
         }
         MO.MatrixOperations_main(input);
      
+        int [][]matrix = {{1,2,3},{4,5,6},{7,8,9}};
+        System.out.println("transpose of the matrix is ");
+        
     
 input.close();
     }

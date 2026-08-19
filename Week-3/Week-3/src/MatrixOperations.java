@@ -62,4 +62,18 @@ public class MatrixOperations
         }
         return arr3;
     }
+
+    public static int[][] transpose(int[][] matrix){
+        int[][] temp = new int[matrix.length][matrix[0].length];
+        for (int i = 0 ; i < matrix.length ; i++)
+            {
+                for(int j = 0 ; j < matrix[0].length ; j ++)
+                {
+                    temp[i][j]= matrix[i][j];
+                    matrix[j][i] = temp[i][j];
+
+                }
+            }
+            return matrix;
+    }
 }
