@@ -4,7 +4,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
         // Scanner input = new Scanner(System.in);
-        int[][] arr = new int[3][3];
+       /* int[][] arr = new int[3][3];
         for (int i = 0; i < arr.length; i++) 
         {
             for (int j = 0; j < arr[0].length; j++) 
@@ -14,9 +14,11 @@ public class App {
 
             }
         }
+            */
 
         MatrixOperations MO = new MatrixOperations();
-        MO.rowSums(arr);
+        int [][]arr = {{1,2,3}, {4,5,6},{7,8,9}};
+        int [] result = MO.rowSums(arr);
 
         int[][] arr1 = new int[3][3];
         for (int i = 0; i < arr.length; i++) 
@@ -29,7 +31,7 @@ public class App {
             }
         }
         MO.columnSum(arr1);
-        
+
         MO.MatrixOperations_main(input);
      
     
