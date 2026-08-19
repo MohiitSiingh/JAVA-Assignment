@@ -6,6 +6,7 @@ public static void main(String[] args) {
     int num = input.nextInt();
     int Rev = reverseNumber(num);
     System.out.print("the number after reversing is : " + Rev);
+     input.close();
 }
 static int reverseNumber(int number){
     int reversed = 0;
