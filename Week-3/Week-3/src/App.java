@@ -38,9 +38,21 @@ public class App {
         // }
         int []result_column = MO.columnSum(arr1);
         System.out.println("sum of columns : ");
-         for(int i : result_column)
+        for(int i : result_column)
         {
              System.out.println(i);
+        }
+
+        int [][]first = {{1,2,3}, {3,4,5}, {5,6,7}};
+        int [][]second = {{9,8,7}, {7,6,5},{5,4,3}};
+        int [][]resultsum = MO.add(first,second);
+        System.out.println("Sum of two arrays: ");
+        for(int i = 0 ; i < 3 ; i++)
+        {
+            for(int j = 0 ; j < 3 ; j++)
+            {
+                System.out.println(resultsum[i][j]);
+            }
         }
         MO.MatrixOperations_main(input);
      
