@@ -21,7 +21,7 @@ public class App {
         int [] result = MO.rowSums(arr);
         for(int i : result)
         {
-            System.out.println(i);
+             System.out.println(i);
         }
 
         int[][] arr1 = new int[3][3];
