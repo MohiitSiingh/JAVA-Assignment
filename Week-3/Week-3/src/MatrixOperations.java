@@ -12,6 +12,7 @@ public class MatrixOperations {
             }
         }
         rowSums(arr);
+        columnSum(arr);
     }
 
     public int[] rowSums(int[][] matrix) {
@@ -29,5 +30,15 @@ public class MatrixOperations {
 
         return rowsum;
     }
+    public int[] columnSum(int[][] matrix){
+    int[] ColumnSum = new int[matrix.length];
+     for (int i = 0; i < matrix[0].length; i++) {
+            int sum = 0;
+            for (int j = 0; j < matrix.length; j++) {
+                sum += matrix[j][i];
+            }
+            ColumnSum[i] = sum;
+        }
+        return ColumnSum;
 }
-
+}

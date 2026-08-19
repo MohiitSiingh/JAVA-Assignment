@@ -3,6 +3,7 @@ public class GreatestCommonDivisor {
 public static void main(String[] args) {
     System.out.println("Enter first integer: ");
     Scanner input = new Scanner(System.in);
+    
     int first = input.nextInt();
     first = Math.abs(first);
     System.out.println("Enter Second integer: ");
@@ -10,6 +11,7 @@ public static void main(String[] args) {
     second = Math.abs(second);
     int GCD = gcd(first,second);
     System.out.println("Greatest Common Divisor : " + GCD);
+     input.close();
 }
 static int gcd(int first, int second){
    while(second!=0){
@@ -18,6 +20,8 @@ static int gcd(int first, int second){
     second = remainder;
 
    }
+
     return first;
+   
 }
 }
