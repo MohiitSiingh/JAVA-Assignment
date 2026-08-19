@@ -27,8 +27,9 @@ public class MatrixOperations {
 
             }
         }
-        rowSums(arr);
+      int [] rowsum =   rowSums(arr);
         columnSum(arr);
+         System.out.println("sum of rows is " + rowsum );
     }
 
     public int[] rowSums(int[][] matrix) {
