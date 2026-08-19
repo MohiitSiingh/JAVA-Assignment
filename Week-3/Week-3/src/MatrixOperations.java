@@ -11,6 +11,22 @@ public class MatrixOperations {
 
             }
         }
+             int[][] arr1 = new int[3][3];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+
+                arr1[i][j] = input.nextInt();
+
+            }
+        }
+             int[][] arr2 = new int[3][3];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+
+                arr2[i][j] = input.nextInt();
+
+            }
+        }
         rowSums(arr);
         columnSum(arr);
     }
@@ -41,4 +57,13 @@ public class MatrixOperations {
         }
         return ColumnSum;
 }
+public int[][] add(int[][] first, int[][] second){
+int [][] arr3 = new int[3][3];
+ for (int i = 0; i < first.length; i++) {
+            for (int j = 0; j < first[0].length; j++) {
+                arr3[i][j] = first[i][j] + second[i][j];
+            }
+        }
+        return arr3;
+    }
 }
