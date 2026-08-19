@@ -28,7 +28,8 @@ public class MatrixOperations {
             }
         }
       int [] rowsum =   rowSums(arr);
-        columnSum(arr);
+       int [] sumColumn =  columnSum(arr);
+       for(int i = 0 ; i < 3 ; i++)
          System.out.println("sum of rows is " + rowsum );
     }
 
