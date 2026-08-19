@@ -1,5 +1,10 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+          Scanner input = new Scanner(System.in);
+     MatrixOperations MO = new MatrixOperations();
+     MO.MatrixOperations_main(input);
+input.close();
     }
 }
