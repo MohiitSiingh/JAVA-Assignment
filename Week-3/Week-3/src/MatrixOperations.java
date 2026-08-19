@@ -30,7 +30,7 @@ public class MatrixOperations {
       int [] rowsum =   rowSums(arr);
        int [] sumColumn =  columnSum(arr);
        for(int i = 0 ; i < 3 ; i++)
-         System.out.println("sum of rows is " + rowsum );
+        System.out.println("sum of rows is " + rowsum[i] );
              for(int i = 0 ; i < 3 ; i++)
                   System.out.println("sum of rows is " + sumColumn );
     }
