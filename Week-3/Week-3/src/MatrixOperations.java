@@ -63,7 +63,7 @@ public class MatrixOperations
         return arr3;
     }
 
-    public static int[][] transpose(int[][] matrix){
+    public int[][] transpose(int[][] matrix){
         int[][] temp = new int[matrix.length][matrix[0].length];
         for (int i = 0 ; i < matrix.length ; i++)
             {
