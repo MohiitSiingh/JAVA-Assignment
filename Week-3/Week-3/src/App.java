@@ -19,23 +19,29 @@ public class App {
         MatrixOperations MO = new MatrixOperations();
         int [][]arr = {{1,2,3}, {4,5,6},{7,8,9}};
         int [] result = MO.rowSums(arr);
+        System.out.println("sum of rows : ");
         for(int i : result)
         {
              System.out.println(i);
         }
 
-        int[][] arr1 = new int[3][3];
-        for (int i = 0; i < arr.length; i++) 
+        // int[][] arr1 = new int[3][3];
+         int [][]arr1 = {{1,2,3}, {4,5,6},{7,8,9}};
+        // for (int i = 0; i < arr.length; i++) 
+        // {
+        //     for (int j = 0; j < arr[0].length; j++) 
+        //     {
+        //         // System.out.print("enter values for array  sum of columns " + i + " " + j + ": ");
+        //         // arr1[i][j] = input.nextInt();
+        //         int []result_column = MO.columnSum(arr1);
+        //     }
+        // }
+        int []result_column = MO.columnSum(arr1);
+        System.out.println("sum of columns : ");
+         for(int i : result_column)
         {
-            for (int j = 0; j < arr[0].length; j++) 
-            {
-                System.out.print("enter values for array 1 sum at " + i + " " + j + ": ");
-                arr1[i][j] = input.nextInt();
-
-            }
+             System.out.println(i);
         }
-        MO.columnSum(arr1);
-
         MO.MatrixOperations_main(input);
      
     
