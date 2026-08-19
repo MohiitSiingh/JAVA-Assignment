@@ -31,6 +31,8 @@ public class MatrixOperations {
        int [] sumColumn =  columnSum(arr);
        for(int i = 0 ; i < 3 ; i++)
          System.out.println("sum of rows is " + rowsum );
+             for(int i = 0 ; i < 3 ; i++)
+                  System.out.println("sum of rows is " + sumColumn );
     }
 
     public int[] rowSums(int[][] matrix) {
