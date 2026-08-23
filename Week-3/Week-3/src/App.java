@@ -73,52 +73,66 @@ public class App {
     
 
 
-// ArrayStatisics code 
+
+
+
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter number of elements: ");
-        int n = sc.nextInt();
-
-        int[] values = new int[n];
-
-        System.out.println("Enter array elements:");
-
-        for (int i = 0; i < n; i++) {
-            values[i] = sc.nextInt();
-        }
-
-        // Empty array
-        if (values.length == 0) {
-            System.out.println("Array is empty.");
-            sc.close();
-            return;
-        }
-
-        
-
-        int total = ArrayStatistics.sum(values);
-        double avg = ArrayStatistics.average(values);
-        int min = ArrayStatistics.minimum(values);
-        int max = ArrayStatistics.maximum(values);
-        int even = ArrayStatistics.countEven(values);
-
-        int odd = values.length - even;
-
-        System.out.println("\n Result will be");
-
-        System.out.println("Sum = " + total);
-        System.out.println("Average = " + avg);
-        System.out.println("Minimum = " + min);
-        System.out.println("Maximum = " + max);
-        System.out.println("Even count = " + even);
-        System.out.println("Odd count = " + odd);
-
-        // Calling printSignCounts()
-        ArrayStatistics.printSignCounts(values);
-
-        sc.close();
+   
+        //  1 - ARRAY STATISTICS
     
-}
+
+        // int[] numbers = {10, -5, 20, 0, -5, 8, 10};
+
+        // System.out.println("Result for array stats:");
+
+        // System.out.println("Sum: " + ArrayStatistics.sum(numbers));
+
+        // System.out.println("Average: " + ArrayStatistics.average(numbers));
+
+        // System.out.println("Minimum: " + ArrayStatistics.minimum(numbers));
+
+        // System.out.println("Maximum: " + ArrayStatistics.maximum(numbers));
+
+        // int even = ArrayStatistics.countEven(numbers);
+
+        // System.out.println("Even count: " + even);
+
+        // System.out.println("Odd count: " + (numbers.length - even));
+
+        // ArrayStatistics.printSignCounts(numbers);
+
+
+   
+        //  2 - LINEAR SEARCH
+      
+
+        int[] searchArray = {10, 20, 30, 20, 40, 20};
+
+        int target = 20;
+
+        System.out.println("\nLinear Search Toolkit");
+
+        System.out.println(
+            "Contains: " +
+            LinearSearchToolkit.contains(searchArray, target)
+        );
+
+        System.out.println(
+            "First index: " +
+            LinearSearchToolkit.firstIndexOf(searchArray, target)
+        );
+
+        System.out.println(
+            "Last index: " +
+            LinearSearchToolkit.lastIndexOf(searchArray, target)
+        );
+
+        System.out.println(
+            "Occurrences: " +
+            LinearSearchToolkit.countOccurrences(searchArray, target)
+        );
+    }
+ // 65. TASK 3 - ARRAY TRANSFORMATIONS
+ 
 }
