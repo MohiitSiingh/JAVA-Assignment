@@ -1,7 +1,4 @@
-import java.util.Scanner;
-
-public class App {
-    // public static void main(String[] args) throws Exception {
+ // public static void main(String[] args) throws Exception {
     //     Scanner input = new Scanner(System.in);
     //     // Scanner input = new Scanner(System.in);
     //    /* int[][] arr = new int[3][3];
@@ -71,54 +68,3 @@ public class App {
     //     input.close();
     // }
     
-
-
-
-    public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter number of elements: ");
-        int n = sc.nextInt();
-
-        int[] values = new int[n];
-
-        System.out.println("Enter array elements:");
-
-        for (int i = 0; i < n; i++) {
-            values[i] = sc.nextInt();
-        }
-
-        // Empty array
-        if (values.length == 0) {
-            System.out.println("Array is empty.");
-            sc.close();
-            return;
-        }
-
-        
-
-        int total = ArrayStatistics.sum(values);
-        double avg = ArrayStatistics.average(values);
-        int min = ArrayStatistics.minimum(values);
-        int max = ArrayStatistics.maximum(values);
-        int even = ArrayStatistics.countEven(values);
-
-        int odd = values.length - even;
-
-        System.out.println("\n Result will be");
-
-        System.out.println("Sum = " + total);
-        System.out.println("Average = " + avg);
-        System.out.println("Minimum = " + min);
-        System.out.println("Maximum = " + max);
-        System.out.println("Even count = " + even);
-        System.out.println("Odd count = " + odd);
-
-        // Calling printSignCounts()
-        ArrayStatistics.printSignCounts(values);
-
-        sc.close();
-    
-}
-}
