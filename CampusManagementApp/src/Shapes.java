@@ -5,9 +5,9 @@ public abstract class Shapes {
 
     public abstract void perimeter();
 
-Shapes (String color){
-this.color = color;
-
-}
-
+    Shapes (String color)
+    {
+    this.color = color;
+    }
+    
 }
