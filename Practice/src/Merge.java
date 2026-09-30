@@ -1,4 +1,5 @@
-public class ArrayPrac {
+public class Merge {
+
 public static void main(String[] args) {
     
 
@@ -43,4 +44,6 @@ public static void main(String[] args) {
     for(int h = 0 ; h < result.length ; h++)
     System.out.println(result[h]);
     }
+
+
 }
