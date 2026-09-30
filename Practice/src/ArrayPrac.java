@@ -2,9 +2,9 @@ public class ArrayPrac {
 public static void main(String[] args) {
     
 
-    int [] arr1 = {1,2,3,4,5,8,7};
+    int [] arr1 = {1,2,3};
 
-    int [] arr2 = {9,5,7,2,5};
+    int [] arr2 = {2,2,3,3,4};
 
     int []result = new int[arr1.length + arr2.length];
 
@@ -40,5 +40,7 @@ public static void main(String[] args) {
         i++;
         j++;
     }
+    for(int h = 0 ; h < result.length ; h++)
+    System.out.println(result[h]);
     }
 }
