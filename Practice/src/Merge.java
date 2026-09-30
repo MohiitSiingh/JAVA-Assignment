@@ -38,7 +38,7 @@ public static void main(String[] args) {
     while(j < arr2.length)
     {
         result[k] = arr2[j];
-        i++;
+        k++;
         j++;
     }
     for(int h = 0 ; h < result.length ; h++)
