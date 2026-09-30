@@ -4,8 +4,15 @@ public static void main(String[] args) {
     int [] a = new int[26];
      for ( int i = 0 ; i < s.length() ; i++)
      {
-        int position = s.charAt(i) - 'a';
+        char ch = s.charAt(i);
+        if(ch >= 'a' && ch<='z')
+        {
+
+        
+        int position = ch - 'a';
         a[position]++;
+
+        }
      }
      for(int i = 0 ; i < a.length ; i++)
         System.out.println(a[i]);
