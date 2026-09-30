@@ -14,18 +14,19 @@ public static void main(String[] args) {
 
     while(i < arr1.length && j < arr2.length)
     {
-        if(arr1[i] > arr2[j])
+        if(arr1[i] < arr2[j])
         {
-            result[k] = arr2[j];
+
+            result[i] = arr1[i];
             k++;
-            j++;
+            i++;
         }
     
         else
         {
-            result[i] = arr1[i];
+            result[k] = arr2[j];
             k++;
-            i++;
+            j++;
         }
     }
 
