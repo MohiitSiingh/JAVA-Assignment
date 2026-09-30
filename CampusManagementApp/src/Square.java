@@ -26,6 +26,10 @@ public class Square extends Shapes
         }
     }
 
+    public Square(double d) {
+        //TODO Auto-generated constructor stub
+    }
+
     public void CalcArea()
     {
         area = side*side;

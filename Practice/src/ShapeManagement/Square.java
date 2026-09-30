@@ -1,11 +1,13 @@
 package ShapeManagement;
 public class Square {
-void printsqSize()
+    double side;
+
+public Square(double side)
 {
-    System.out.println("area is 25 sq unit");
+    this.side = side;
 }
-Square(double side)
+public double printsqSize()
 {
-    
+    return side*side;
 }
 }
