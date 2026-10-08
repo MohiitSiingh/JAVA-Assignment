@@ -12,15 +12,16 @@ public static void main(String[] args)
           int copy = num/10;
             if (i == 0)
             {
-                System.out.println("Ones " + remainder);
+                System.out.println("Ones :" + remainder);
+            
             }
             else if ( i == 1)
             {
-                System.out.println("Tens" + remainder);
+                System.out.println("Tens :" + remainder);
             }
             else if ( i == 2)
             {
-                System.out.println("Hundred" + remainder);
+                System.out.println("Hundred :" + remainder);
             }
 
         }
