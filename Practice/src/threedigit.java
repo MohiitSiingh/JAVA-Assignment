@@ -11,7 +11,11 @@ public void main(String[] args)
         { int remainder = num % 10 ;
             if ( remainder >= 0 && remainder <=9)
             {
-                
+                System.out.println("Ones " + remainder);
+            }
+            else if ( remainder >= 9 && remainder <=9)
+            {
+                System.out.println("Tens" + remainder);
             }
         }
     }
