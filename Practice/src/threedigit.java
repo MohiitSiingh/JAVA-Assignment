@@ -9,7 +9,7 @@ public static void main(String[] args)
     {
         for(int i = 0 ; i < 3 ; i++)
         { int remainder = num % 10 ;
-          int copy = num/10;
+            num = num/10;
             if (i == 0)
             {
                 System.out.println("Ones :" + remainder);
