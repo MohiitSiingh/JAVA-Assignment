@@ -9,11 +9,12 @@ public void main(String[] args)
     {
         for(int i = 0 ; i < 3 ; i++)
         { int remainder = num % 10 ;
+          int copy = num/10;
             if ( remainder >= 0 && remainder <=9)
             {
                 System.out.println("Ones " + remainder);
             }
-            else if ( remainder >= 9 && remainder <=9)
+            else if ( remainder >= 10 && remainder <=100)
             {
                 System.out.println("Tens" + remainder);
             }
