@@ -78,6 +78,12 @@ public class CLinkedList {
 
     public void Print()
     {
-        
+        System.out.println();
+        Node traversal = tail.next;
+        while(traversal != tail)
+        {
+            System.out.println(traversal.data);
+            traversal = traversal.next;
+        }
     }
 }
