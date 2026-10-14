@@ -64,8 +64,20 @@ public class CLinkedList {
         if(tail.next == null)
         {
             tail = null;
+            return;
         }
-        
+        Node traversal = tail;
+        while(traversal.next != tail)
+        {
+            traversal = traversal.next;
+        }
+        traversal.next = tail.next;
+        tail.next = null;
+        tail = traversal;
+    }
 
+    public void Print()
+    {
+        
     }
 }
