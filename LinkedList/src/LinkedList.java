@@ -20,6 +20,12 @@ public void Insert(int data)
 {
  if ( head == null)
  {
+    head = new Node();
+    head.next = null;
+    head.data = data;
+    return ;
+ }
+ else{
     
  }
 }
