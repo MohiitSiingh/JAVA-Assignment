@@ -92,8 +92,24 @@ public class CLinkedList {
 
     void FindCycle()
     {
-        Node fast;
-        Node slow;
-        
+        Node fast = tail;
+        Node slow = tail;
+
+        while(true)
+        {
+            if(fast == null || slow == null)
+            {
+                System.out.println("End of linked list ");
+                return;
+            }
+
+            fast = fast.next.next;
+            slow = slow.next;
+            if(fast == slow )
+            {
+                System.out.println("It is  a cycle");
+                return;
+            }
+        }
     }
 }

@@ -19,5 +19,6 @@ public class App {
 
         CLL.Print();
 
+        CLL.FindCycle();
     }
 }
