@@ -23,6 +23,9 @@ void ReversePrint(Node head)
         return;
     }
     ReversePrint(head.next)
+    {
+        System.out.println(" " + head.next);
+    }
 }
 
 }
