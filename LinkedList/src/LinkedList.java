@@ -18,7 +18,11 @@ LinkedList()
 
 void ReversePrint(Node head)
 {
-    
+    if(head==null)
+    {
+        return;
+    }
+    ReversePrint(head.next)
 }
 
 }
