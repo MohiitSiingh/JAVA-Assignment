@@ -27,5 +27,8 @@ public class App {
             temp = temp.next;
         }
 
+
+        LinkedList L3 = new LinkiedList();
+        
     }
 }
