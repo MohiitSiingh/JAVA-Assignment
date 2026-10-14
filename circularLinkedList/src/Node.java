@@ -1,6 +1,6 @@
 public class Node {
 int data;
-Node tail;
+Node next;
 
 
 }
