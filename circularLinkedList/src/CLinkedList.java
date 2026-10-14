@@ -85,5 +85,8 @@ public class CLinkedList {
             System.out.println(traversal.data);
             traversal = traversal.next;
         }
+
+        System.out.println(tail.data);
+        System.out.println();
     }
 }
