@@ -29,6 +29,6 @@ public class App {
 
 
         LinkedList L3 = new LinkiedList();
-        
+        L3.
     }
 }

@@ -15,7 +15,11 @@ LinkedList()
 {
     head = null;
 }
+public void Insert(int data)
 
+{
+    
+}
 void ReversePrint(Node head)
 {
     if(head==null)
