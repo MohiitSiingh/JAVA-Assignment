@@ -89,4 +89,11 @@ public class CLinkedList {
         System.out.println(tail.data);
         System.out.println();
     }
+
+    void FindCycle()
+    {
+        Node fast;
+        Node slow;
+        
+    }
 }
