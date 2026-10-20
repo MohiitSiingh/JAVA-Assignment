@@ -25,9 +25,9 @@ public void Insert(int data)
     head.data = data;
     return ;
  }
- else{
-    
- }
+head.next = new Node();
+head.next.data = data;
+
 }
 public void ReversePrint(Node head)
 {
