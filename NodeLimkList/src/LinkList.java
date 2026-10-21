@@ -78,6 +78,10 @@ public class LinkList {
         }
         n.Next = t.Next;
         n.prev = t;
+        t.Next = n;
+        n.Next.prev = n;
+
+        
 
 
     }
