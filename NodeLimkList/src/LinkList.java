@@ -3,8 +3,23 @@ public class LinkList {
     private Node head = null;
 
 
-
-    public void InsertAt(String n , int r)
+    public void InsertAtFront(String n , int r){
+        
+        if ( head == null)        
+        {
+            head = new Node();
+            head.name = n;
+            head.rollno= r;
+            head.Next = null;
+        }
+        else
+        {
+            head.prev = new Node();
+            
+            Node temp1 = head.prev;
+        } 
+    }
+    public void InsertAtEnd(String n , int r)
     {
         if ( head == null)
         {
