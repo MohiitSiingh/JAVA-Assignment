@@ -85,6 +85,15 @@ public class LinkList {
 
     void display()
     {
-        
+               System.out.println();
+        Node traversal = head.Next;
+        while(traversal != null)
+        {
+            System.out.println(traversal.data);
+            traversal = traversal.Next;
+        }
+
+        System.out.println(head.data);
+        System.out.println(); 
     }
 }
