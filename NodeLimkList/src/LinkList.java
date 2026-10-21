@@ -75,7 +75,7 @@ public class LinkList {
             return;
         }
         Node n = new Node() ;
-
+        n.data = d;
         Node t = head;
         for(int i = 0 ; i < pos-1 ; i++)
         {
