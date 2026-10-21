@@ -2,7 +2,9 @@ public class LinkList {
  
     private Node head = null;
 
-    public void InsertAtEnd(String n , int r)
+
+
+    public void InsertAt(String n , int r)
     {
         if ( head == null)
         {
