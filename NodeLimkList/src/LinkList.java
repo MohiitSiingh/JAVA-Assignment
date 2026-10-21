@@ -1,6 +1,6 @@
 public class LinkList {
  
-    private Node head = null;
+    private Node head ;
     int size;
     LinkList()
     {
@@ -10,11 +10,16 @@ public class LinkList {
         head.data = 0;
 
     }
-    LinkList(int d ,int s )
+
+     LinkList(int d, int s)
     {
+        head = new Node();
         head.data = d;
-        size = s;
+        head.Next = null;
+        head.prev = null;
+        size = 1;
     }
+    
 
 
     public void InsertAtFront(int d){
