@@ -74,8 +74,10 @@ public class LinkList {
         for(int i = 0 ; i < pos-1 ; i++)
         {
             t = t.Next;
-            
+
         }
+        n.Next = t.Next;
+        n.prev = t;
 
 
     }
