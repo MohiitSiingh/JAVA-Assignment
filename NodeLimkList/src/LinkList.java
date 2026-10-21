@@ -81,9 +81,6 @@ public class LinkList {
         t.Next = n;
         n.Next.prev = n;
 
-        
-
-
     }
 
     void display()
