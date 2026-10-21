@@ -37,6 +37,7 @@ public class LinkList {
             newNode.Next = head;
             newNode.prev = null;
             newNode.data = d;
+            head = newNode;
         
     }
     public void InsertAtEnd(int d)
