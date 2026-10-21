@@ -38,6 +38,7 @@ public class LinkList {
             newNode.prev = null;
             newNode.data = d;
             head = newNode;
+            size++;
         
     }
     public void InsertAtEnd(int d)
@@ -61,10 +62,12 @@ public class LinkList {
             }
             temp.Next = newNode;
         }
+        size++;
     }
 
     public void InsertAtPos(int pos , int d)
     {
+        size++;
         if(pos == 0)
         {
             InsertAtFront(d);
