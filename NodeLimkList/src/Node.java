@@ -3,4 +3,5 @@ public class Node {
     int rollno;
     Node Next;
     Node prev;
+    int data;
 }
