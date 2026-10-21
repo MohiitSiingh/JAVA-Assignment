@@ -56,7 +56,7 @@ public class LinkList {
         }
     }
 
-    public void InsertAtPos(int pos , int r, String n)
+    public void InsertAtPos(int pos , int d)
     {
         if(size == 0)
         {
@@ -68,7 +68,16 @@ public class LinkList {
             InsertAtEnd(99);
             return;
         }
-        
+        Node n = new Node() ;
+
+        Node t = head;
+        for(int i = 0 ; i < pos-1 ; i++)
+        {
+            t = t.Next;
+            
+        }
+
+
     }
 
     void display()
