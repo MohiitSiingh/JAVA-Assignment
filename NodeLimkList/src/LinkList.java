@@ -33,9 +33,10 @@ public class LinkList {
         else
         {
             
-            Node temp1 = new Node();
-            temp1 = head.prev;
-            temp1.data = d;
+            Node newNode = new Node();
+            newNode.Next = head;
+            newNode.prev = null;
+            newNode.data = d;
         } 
     }
     public void InsertAtEnd(int d)
@@ -65,12 +66,12 @@ public class LinkList {
     {
         if(size == 0)
         {
-            InsertAtFront(1);
+            InsertAtFront(d);
             return;
         }
         if(pos >= size)
         {
-            InsertAtEnd(99);
+            InsertAtEnd(d);
             return;
         }
         Node n = new Node() ;
