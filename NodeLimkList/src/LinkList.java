@@ -7,7 +7,7 @@ public class LinkList {
         head = null;
         size = 0;
        
-        head.data = 0;
+      
 
     }
 
@@ -91,7 +91,7 @@ public class LinkList {
 
     void display()
     {
-               System.out.println();
+        System.out.println();
         Node traversal = head.Next;
         while(traversal != null)
         {
