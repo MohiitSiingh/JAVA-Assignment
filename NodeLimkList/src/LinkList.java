@@ -14,9 +14,11 @@ public class LinkList {
         }
         else
         {
-            head.prev = new Node();
             
-            Node temp1 = head.prev;
+            Node temp1 = new Node();
+            temp1 = head.prev;
+            temp1.name = n;
+            temp1.rollno = r;
         } 
     }
     public void InsertAtEnd(String n , int r)
