@@ -9,6 +9,8 @@ public class App {
         l.InsertAtFront(5);
 
         l.InsertAtEnd(99);
+        l.InsertAtEnd(9991);
+        l.InsertAtEnd(99990);
 
         l.InsertAtPos(3, 23456);
          l.display();
