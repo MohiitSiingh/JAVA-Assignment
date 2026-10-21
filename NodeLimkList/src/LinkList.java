@@ -24,20 +24,20 @@ public class LinkList {
 
     public void InsertAtFront(int d){
         
-        if ( head == null)        
-        {
-            head = new Node();
-            head.data = d;
-            head.Next = null;
-        }
-        else
-        {
+        // if ( head == null)        
+        // {
+        //     head = new Node();
+        //     head.data = d;
+        //     head.Next = null;
+        // }
+        
+        
             
             Node newNode = new Node();
             newNode.Next = head;
             newNode.prev = null;
             newNode.data = d;
-        } 
+        
     }
     public void InsertAtEnd(int d)
     {
