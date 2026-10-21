@@ -64,7 +64,7 @@ public class LinkList {
 
     public void InsertAtPos(int pos , int d)
     {
-        if(size == 0)
+        if(pos == 0)
         {
             InsertAtFront(d);
             return;
