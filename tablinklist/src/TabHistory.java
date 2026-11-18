@@ -1,6 +1,6 @@
 public class TabHistory {
     node current;
-    node head;
+
 
     public void visit(String url)
     {
@@ -20,6 +20,27 @@ public class TabHistory {
 
     public void forward()
     {
-        
+        if(current!= null && current.next != null)
+        {
+            current.next = current;
+        }
+        else
+        {
+            System.out.println("No forward page");
+        }
     }
+
+    public void Back()
+    {
+        if(current!= null && current.prev != null)
+        {
+            current.prev = current;
+        }
+        else
+        {
+            System.out.println("No back page");
+        }
+    }
+
+    
 }
